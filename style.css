@@ -1,0 +1,40 @@
+.photo-frame{
+    width: 170px;
+    height: 140px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.photo-frame .photo img{
+    width: 170px;
+    height: 140px;
+
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-details{
+    position: absolute;
+    top: 0;
+    width: 170px;
+    height: 260px;
+    display: none;
+    text-align: center;
+}
+.photo-frame:hover .photo-details{
+    display: block;
+    background-color: rgba(255, 255, 255,.5);
+}
+.photo-frame:hover .photo-details h3{
+    color: white;
+    background-color: rgba(0, 0, 0,.5);
+}
+.photo-frame:hover .photo img{
+    transform: rotate(360deg) scale(1.5);
+
+    transition: transform 2s;
+}
